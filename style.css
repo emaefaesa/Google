@@ -15,10 +15,58 @@ body {
 
 }
 
+/*NAV*/
 
-.d-flex mb-3 justify-content-end {
-
+.btn-nav {
+    color: white;
+    background: #1a73e8;
+    border: 1px solid transparent;
+    font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .25px;
+    line-height: 16px;
+    margin-left: 10px;
+    margin-right: 8px;
+    min-width: 96px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
+}
+
+header {
+    padding: 6px;
+}
+
+header a {
+    color: rgba(0,0,0,.87);
+    text-decoration: none;
+}
+
+.b-1-nav {
+    width: 48px;
+    height: 48px;
+}
+
+.b-1-nav:hover {
+    
+background-color: #f1f1f1;
+border-radius: 100%;
+}
+
+
+/*LOGO*/
+
+.col-logo {
+    margin-top: 50px;
+}
+
+
+/*SEARCH*/
+
 
 .container-fluid {
     padding: 6px;
@@ -42,129 +90,71 @@ body {
     height: 48px;
 }
 
-.col-logo {
-    flex-direction: column;
-    align-items: center;
-    min-height: 150px;
-    height: calc(100% - 560px);
-    max-height: 290px;
-}
+
 
 a:hover {
     text-decoration: underline;
 }
 
-/*-------------------*/
 
-header .options a {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-header .options a img {
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
+.search {
+    padding: 20px;
+    
 }
 
-.dots-logo {
-    display: inline-block;
-    background-image: url(assets/dots-logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 24px;
-    height: 24px;
-}
-
-.search-logo {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url(assets/search-logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.micro-logo {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-image: url(assets/micro-logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.camera-logo {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-image: url(assets/camera-logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-main {
-    height: calc(100% - 60px - 90px);
+.form-control {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    /* background-color: indigo; */
-}
-main .container figure{
-    height: 92px;
-}
-main .container figure img {
-    height: 100%;
-}
-main .container .searcher {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    height: 40px;
-    width: 450px;
-    padding: 8px 12px;
-    border: 1px solid gray;
+    z-index: 3;
+    position: relative;
+    min-height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
     border-radius: 24px;
+    margin: 0 auto;
+    width: auto;
+    width: 584px;
 }
-main .container .searcher button {
-    border: none;
-    background-color: transparent;
+
+.buttons-search {
+    padding: 20px;
 }
-main .container .searcher input {
-    width: 100%;
-    border: none;
-    color: whitesmoke;
-    background-color: transparent;
-}
-main .container .searcher-buttons {
-    display: flex;
-    gap: 10px;
-}
-main .container .searcher-buttons button{
-    border: none;
-    border-radius: 4px;
-    background-color: #303134;
-    padding: 12px;
-    color: whitesmoke;
+
+.form-control:hover {
+    box-shadow: #171717;
 }
 
 
-main .container p {
-    font-size: small;
-    color: whitesmoke;
-}
+
+
+
+/* .search {
+    
+        display: flex;
+        z-index: 3;
+        position: relative;
+        min-height: 44px;
+        background: #fff;
+        border: 1px solid #dfe1e5;
+        box-shadow: none;
+        border-radius: 24px;
+        margin: 0 auto;
+        width: auto;
+        max-width: 584px;
+
+} */
+
+
 
 footer {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #202124;
     display: flex;
-    flex-direction: column;
-    height: 90px;
-    background-color: #171717;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #f2f2f2;
 }
 footer section {
     padding: 0 30px;
@@ -172,17 +162,4 @@ footer section {
     align-items: center;
     height: 50%;
     color: #999da2;
-}
-footer section.more-info {
-    border-top: #3b3b3b solid 1px;
-    display: flex;
-    justify-content: space-between;
-}
-footer section.more-info div {
-    display: flex;
-    gap: 18px;
-}
-footer section.more-info div a {
-    color: #999da2;
-    text-decoration: none;
 }
